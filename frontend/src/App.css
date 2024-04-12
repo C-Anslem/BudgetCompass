@@ -1,0 +1,145 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  background-image:url(/src/assets/bgimage.png);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+ 
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #efe0cb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  top: 130px;
+}
+
+.container img {
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 50%; 
+  transform: translateX(-50%);
+} 
+
+.container h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: green;
+}
+
+
+.budget-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.budget-amount,
+.income-amount,
+.expense-amount {
+  font-weight: bold;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-section button {
+  flex: 0 0 auto;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .input-section button {
+    margin-top: 10px;
+  }
+}
+
+.transactions {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.transactions h2 {
+  margin-bottom: 10px;
+}
+
+.transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.transactions li.income {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.transactions li.expense {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+.transaction-description {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.transaction-amount {
+  font-weight: bold;
+}
